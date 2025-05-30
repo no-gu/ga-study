@@ -750,5 +750,13 @@
                 return false;
             });
         </script>
+        <script>
+            const bugerMenuDownloadButton = document.getElementById("buger-menu");
+            bugerMenuDownloadButton.addEventListener("click", () => {
+                gtag("event", "click_button", {
+                    name: "버거 메뉴 다운로드",
+                });
+            });
+        </script>
     </body>
 </html>
